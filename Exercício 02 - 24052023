@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double valorcompra, quantidadepres, valoravist, valoraprazo, valorprest;    
+		Scanner ler = new 
+    Scanner(System.in);
+    
+		System.out.println("qual o valor da compra ?:");
+		valorcompra = ler.nextDouble();
+
+        System.out.println("o pagamento sera realizado em quantas parcelas ?:");
+		quantidadepres = ler.nextDouble();
+      
+        valoravist = valorcompra - valorcompra*0.1;
+        valoraprazo = valorcompra + valorcompra*0.2;
+        valorprest =  valoraprazo / quantidadepres;
+
+		
+
+        if (quantidadepres>1){
+            System.out.print("o valor da compra a prazo é " + valoraprazo);
+            
+            System.out.print("o valor de cada prestação é " + valorprest);
+            
+        }else{
+            System.out.print("o valor da compra a vista é " + valoravist);
+        }
+  }
+}
