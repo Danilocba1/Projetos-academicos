@@ -28,3 +28,5 @@ import java.io.*;
   System.out.println("A sua pontuação total foi de:"+ pontos);  
  }
 }
+
+fazendoq qualquer copisa aqui somente para ficarr salvo
