@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.io.*;
+
+ public class Main {
+  public static void main(String[] args) {
+  Scanner in = new Scanner(System.in);
+  
+  int numerosmega [] = new int[6];
+  int numeroscartao [] = new int[6];
+  int pontos = 0;
+  
+  for (int i = 0;i<6;i++){
+      System.out.print("Digite o " +( i+ 1)+ "° numero do sorteio da mega sena: ");
+      numerosmega[i]= in.nextInt();
+  }
+  for (int i = 0;i<6;i++){
+      System.out.print("Digite o " +( i+ 1)+ "° numero que voce jogou no seu cartao: ");
+      numeroscartao[i]= in.nextInt();
+  }
+  for (int i = 0;i<6;i++){
+     int  numerocartao = numeroscartao[i];
+  for (int x = 0; x<6; x++){
+      if (numerosmega[x] == numerocartao){
+          pontos++;
+    }
+   }
+  }
+  System.out.println("A sua pontuação total foi de:"+ pontos);  
+ }
+}
